@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var PORT = process.env.HTTP_PORT || 1337;
+var server = require('../');
+
+server.listen(PORT);
+console.log('Server started at', PORT);
